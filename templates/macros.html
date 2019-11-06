@@ -1,0 +1,9 @@
+{% macro render_list(list) %}
+<ol>
+    {% for element in list %}
+    <li>
+        {{ element|title }}
+    </li>
+    {% endfor %}
+</ol>
+{% endmacro %}

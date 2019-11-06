@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% import 'macros.html' as my_macro %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+    <h3>List of Books that {{name}} likes</h3>
+    {{ my_macro.render_list(books) }}
+</body>
+</html>
