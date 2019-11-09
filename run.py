@@ -7,8 +7,7 @@ app = Flask(__name__)
 #to set some project attributes
 app.config.update(
     SECRET_KEY='password',
-    #password not working in postgreSQL
-    SQLALCHEMY_DATABASE_URI='postgresql://postgres:Man@localhost/catalog_db',
+    SQLALCHEMY_DATABASE_URI='postgresql://postgres:Mandal@localhost/catalog_db',
     #SQLALCHEMY_DATABASE_URI='<database>://<userid>:<password>@<server>/<database_name>',
     SQLALCHEMY_TRACK_MODIFICATIONS=True
 )
